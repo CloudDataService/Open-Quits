@@ -1,0 +1,1 @@
+UPDATE `gps` SET `gp_name` = 'Hetton Group Practice' WHERE `gp_code` = 'A89004';

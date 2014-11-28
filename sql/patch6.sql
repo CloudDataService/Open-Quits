@@ -1,0 +1,1 @@
+ALTER TABLE `service_providers` ADD `location_other` varchar(64) COLLATE 'latin1_swedish_ci' NULL AFTER `location`, COMMENT='';

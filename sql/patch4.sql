@@ -1,0 +1,1 @@
+ALTER TABLE `monitoring_forms` ADD `support_none` tinyint(1) unsigned NOT NULL DEFAULT '0' AFTER `support_2`;

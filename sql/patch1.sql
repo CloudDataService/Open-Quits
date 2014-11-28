@@ -1,0 +1,1 @@
+ALTER TABLE `log` ADD `admin_id` tinyint(3) unsigned NOT NULL AFTER `service_provider_staff_id`;

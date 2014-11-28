@@ -1,0 +1,5 @@
+# rewrite the dynamicness
+RewriteEngine on
+ RewriteCond $1 !^(index\.php|css|img|scripts|resources|robots\.txt)
+ RewriteRule ^(.*)$ /index.php/$1 [L]
+ RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]

@@ -1,0 +1,14 @@
+-- Adminer 3.6.3 MySQL dump
+
+SET NAMES utf8;
+SET foreign_key_checks = 0;
+SET time_zone = 'SYSTEM';
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+INSERT INTO `export_schemas` (`id`, `type`, `title`, `export_schema`) VALUES
+(1,	'monitoring_forms',	'Activity - kds',	'a:9:{s:7:\"sp_name\";s:13:\"Provider name\";s:8:\"location\";s:16:\"Location/setting\";s:17:\"treatment_outcome\";s:17:\"Treatment outcome\";s:17:\"intervention_type\";s:17:\"Intervention type\";s:23:\"agreed_quit_date_format\";s:16:\"Agreed quit date\";s:19:\"date_created_format\";s:12:\"Date created\";s:31:\"date_of_4_week_follow_up_format\";s:24:\"Date of 4 week follow up\";s:3:\"pct\";s:15:\"Local Authority\";s:19:\"treatment_outcome_4\";s:27:\"Treatment outcome (4 weeks)\";}'),
+(3,	'monitoring_forms',	'Public Health',	'a:26:{s:2:\"id\";s:18:\"Monitoring form ID\";s:19:\"date_created_format\";s:12:\"Date created\";s:31:\"date_of_last_tobacco_use_format\";s:24:\"Date of last tobacco use\";s:23:\"agreed_quit_date_format\";s:16:\"Agreed quit date\";s:17:\"intervention_type\";s:17:\"Intervention type\";s:9:\"support_1\";s:25:\"Pharmacological support 1\";s:9:\"support_2\";s:25:\"Pharmacological support 2\";s:19:\"treatment_outcome_4\";s:27:\"Treatment outcome (4 weeks)\";s:20:\"treatment_outcome_12\";s:28:\"Treatment outcome (12 weeks)\";s:15:\"referral_source\";s:15:\"Referral source\";s:18:\"previously_treated\";s:18:\"Previously treated\";s:7:\"sp_name\";s:13:\"Provider name\";s:13:\"provider_code\";s:13:\"Provider code\";s:12:\"sp_post_code\";s:18:\"Provider post code\";s:3:\"pct\";s:15:\"Local Authority\";s:10:\"department\";s:15:\"Department/ward\";s:8:\"location\";s:16:\"Location/setting\";s:5:\"venue\";s:5:\"Venue\";s:6:\"gender\";s:6:\"Gender\";s:13:\"date_of_birth\";s:13:\"Date of birth\";s:9:\"post_code\";s:9:\"Post code\";s:15:\"occupation_code\";s:15:\"Occupation code\";s:12:\"ethnic_group\";s:12:\"Ethnic group\";s:7:\"gp_name\";s:7:\"GP name\";s:10:\"gp_address\";s:10:\"GP address\";s:7:\"gp_code\";s:7:\"GP code\";}'),
+(2,	'monitoring_form_claims',	'Weekly Finance Output',	'a:11:{s:7:\"sp_name\";s:13:\"Provider name\";s:12:\"adviser_code\";s:12:\"Adviser code\";s:13:\"provider_code\";s:13:\"Provider code\";s:9:\"cost_code\";s:9:\"Cost code\";s:8:\"location\";s:16:\"Location/setting\";s:10:\"claim_type\";s:10:\"Claim type\";s:20:\"date_of_claim_format\";s:13:\"Date of claim\";s:6:\"status\";s:6:\"Status\";s:4:\"cost\";s:4:\"Cost\";s:10:\"group_name\";s:5:\"Group\";s:23:\"agreed_quit_date_format\";s:16:\"Agreed Quit Date\";}')
+ON DUPLICATE KEY UPDATE `id` = VALUES(`id`), `type` = VALUES(`type`), `title` = VALUES(`title`), `export_schema` = VALUES(`export_schema`);
+
+-- 2013-03-25 11:11:40

@@ -1,0 +1,83 @@
+application/controllers/session.php
+public_html/help/*
+public_html/resources/*
+
+
+
+########################################
+###   SOME SENSIBLE DEFAULTS BELOW   ###
+# https://github.com/github/gitignore  #
+########################################
+
+##############################
+### CodeIgntiter ###
+
+*/config/development/database.php
+*/config/staging/database.php
+*/logs/log-*.php
+*/logs/!index.html
+*/logs/*/log-*.php
+*/logs/*/sql-*.php
+*/logs/*/!index.html
+*/cache/*
+*/cache/!index.html
+
+### /END CodeIgniter ###
+##############################
+
+
+##############################
+### OSX ###
+
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### /END OSX ###
+##############################
+
+
+##############################
+### WIN ##
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### /END WIN ###
+##############################
+
+
+##############################
+### SVN ###
+
+.svn/
+
+### /END SVN ###
+##############################
+
+
+##########################################
+###         KEEP THE FOLLOWING         ###
+
+!.gitkeep
+!.htaccess
+!index.html
+
+##########################################

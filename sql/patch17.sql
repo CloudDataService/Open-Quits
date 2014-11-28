@@ -1,0 +1,1 @@
+ALTER TABLE `monitoring_forms` ADD `co_quit` tinyint(1) unsigned NULL;

@@ -1,0 +1,136 @@
+Version 3.1.2.3 (2010-05-07)
+	Fixed bug where Gecko browsers would produce a strange exception some times while editing images.
+Version 3.1.2.2 (2010-03-08)
+	Fixed bug where Silverlight uploader failed to upload chunked contents.
+Version 3.1.2.1 (2010-03-05)
+	Fixed bug where tools where not disabled in the Uploaded plugin.
+	Fixed bug where you could not remove an item from Uploaded plugin.
+	Fixed bug where uploads would fail if there was chunking in Flash/Silverlight.
+	Fixed bug where Plupload was leaking memory in Flash and Silverlight.
+Version 3.1.2 (2010-03-03)
+	Added a plugin called "Uploaded" where its possible to view your own latest uploaded files.
+	Added plupload as the upload runtime. Plupload has more runtimes such as BrowserPlus and Google Gears.
+	Added support for dynamic image resizing, the upload.formats can now have * as witdh/height.
+	Fixed so the current view mode is saved in a cookie.
+	Fixed bug where focus wasn't properly handled on IE 8.
+Version 3.1.1.5 (2010-01-10)
+	Fixed scale bug where scaling was done even if the width/height was the same size as the configured one.
+	Fixed bug where Flash wasn't transparent in WebKit again.
+Version 3.1.1.4 (2009-11-26)
+	Fixed issues with PHP 5.3.0 it will now set default time zone and check for set_magic_quotes_runtime support.
+	Fixed strict runtime issues it's now compatible with strict mode.
+Version 3.1.1.3 (2009-11-16)
+	Fixed bug where upload wouldn't work correctly on IE using Flash runtime.
+Version 3.1.1.2 (2009-10-20)
+	Fixed the JoomlaAuthenticator so that it works correctly with Joomla 1.5.14.
+	Fixed security issue if register globals was enabled, this is mostly disabled on hosts these days anyway.
+	Fixed bug where the custom.thumbnail_url wouldn't get the configured preview.urlprefix.
+Version 3.1.1.1 (2009-09-14)
+	Fixed Drupal authentication issue. Where sessions couldn't be accessed below the drupal root.
+Version 3.1.1 (2009-09-09)
+	Fixed so the magic_quotes_runtime is automatically disabled.
+	Added a new imagemanager_contextmenu option to enable the possibility to disable the context menu.
+	Fixed bug where the imagemanager couldn't update the image path if you edited it using the context menu.
+Version 3.1.0.7.1 (2009-03-30)
+	Fixed bug where the multiple upload function wouldn't work properly on IE and using Flash.
+Version 3.1.0.7 (2009-03-25)
+	Fixed bug where IE 8 was crashing when clicking on folder names.
+	Fixed bug where flv and flash movies wasn't displayed due to changes to SWFObject in the last release.
+Version 3.1.0.6 (2009-03-23)
+	Added support for downloading images by clicking the image context menu.
+	Fixed issue where the whole image couldn't be clicked to insert.
+	Fixed bug where image rotation/flip previews would look strange on alpha transparent PNG files.
+	Fixed bug where image rotation of 270 degrees would produce invalid results.
+	Fixed bug where manipulating alpha transparent PNG files would fail to retain the transparency.
+	Fixed bug where editing of images wouldn't function in IE 8. Due to a browser crash.
+	Fixed bug where the thumbnail.insert option wasn't working properly.
+Version 3.1.0.5 (2009-01-22)
+	Added new custom_query option. To enable you to add custom query parameters to initial page request.
+	Fixed so that the upload form closes automatically if all files was uploaded correctly.
+	Fixed bug where a request to menu_icons.gif where produced and it produced a 404 web server error.
+	Fixed bug where the item config in the session collection would be overwritten if register_globals where enabled in php.ini.
+	Fixed bug where inserting links would fail the second time if the inlinepopups wasn't used in TinyMCE.
+	Fixed bug where the Flash uploader was sending an incorrect application/x-www-form-urlencoded content type.
+	Fixed bug where the ExternalAuthenticator would add double port numbers.
+	Fixed bug where a multiple path value for the session override of the filesystem.rootpath item would fail.
+	Fixed bug where opening a standalone instance while having TinyMCE on the same page would produce incorrect callback results.
+	Fixed bug where the remove_script_host option wouldn't work correctly.
+Version 3.1.0.4 (2008-11-27)
+	Fixed bug where the Flash uploader was compiled with debugging on.
+	Fixed bug where downloading of files with spaces didn't work correctly.
+	Fixed bug where it wouldn't load correctly correctly in old TinyMCE 2.x versions.
+	Fixed bug where filter wouldn't be applied on IE when the user pressed enter.
+	Fixed bug auto resizing of uploaded images would fail if the files where over 1MB.
+Version 3.1.0.3 (2008-11-20)
+	Fixed bug where inline dialogs wasn't opened correctly when loading the product cross domain.
+	Fixed bug where it was returning incorrect content-encoding headers.
+	Fixed bug where the multiple upload feature didn't work correctly when * was used for the valid extensions settings.
+	Fixed bug where language packs wasn't loading correctly when TinyMCE was compressed using the gzip compressor.
+	Fixed bug where switching from ImageManager to FileManager would fail some times when used with TinyMCE.
+Version 3.1.0.2 (2008-11-13)
+	Added new possibility to have a custom function for the imagemanager_insert_template option.
+	Added new imagemanager_contextmenu option that enables you to disable the contextmenu addons for TinyMCE.
+	Fixed bug where the combination of Google Gears and images larger then the chunk size would fail.
+	Fixed bug where errors passed back from the server would be ignored by the Google gears implementation.
+	Fixed bug where the file upload progress bar wasn't moving if upload errors occured.
+	Fixed bug where domain relaxing didn't work when TinyMCE and the ImageManager was loaded from another domain.
+	Fixed bug where the preview.urlprefix host wouldn't get applied correctly to output.
+	Fixed bug where edit and view dialogs would be scrollable if the page was scrollable.
+	Fixed bug where the resize tool would produce a move cursor in the edit dialog.
+	Fixed bug where switching page size wouldn't take the user to the first page.
+Version 3.1.0.1 (2008-11-10)
+	Fixed bug where it wasn't possible to override the preview.wwwroot and preview.urlprefix settings with mc_access files.
+	Fixed bug with notice messages for missing items when using display_errors on.
+	Fixed bug where it wasn't possible to load TinyMCE and the imagemanager plugin from another sub domain.
+	Fixed bug where scrollbars wouldn't appear for native windows when used with TinyMCE.
+	Fixed bug where it was impossible to enable remember_last_path by default.
+	Fixed bug where the upload.chunk_size option didn't work correctly.
+	Fixed bug where the onchange event wasn't fired as it was before when form items was changed by a browse call.
+	Fixed bug where the category list and special folders list where separated by an odd margin in IE.
+	Fixed so it's possible to see the current upload runtime when enablig the general.debug option.
+Version 3.1 (2008-11-06)
+	Fixed bug where the toolbar would get a trailing focus rectangle on Gecko.
+	Fixed bug with using the imagemanager on a non default http port.
+	Fixed bug where the directory list wasn't refreshed if you using the refresh button.
+	Fixed bug where progress of listing directories didn't work.
+	Fixed bug where there could be a double scroll when you had to many directories.
+	Fixed bug where sorting was incorrect on non Windows operating systems.
+	Fixed bug where the ClientResources class would produce an error due to an invalid regexp.
+	Fixed bug where IE would scroll the page down if you clicked the "basic upload" link.
+	Fixed bug where single upload didn't work correctly.
+	Fixed so all new integration callback functions have a file object.
+Version 3.1b2 (2008-10-30)
+	Added new confirm message to edit dialog if the user didn't save the image before closing the dialog.
+	Added new paging buttons and input. This new UI works better if you have a huge amount of images in one directory.
+	Added new edit.format option. Enables you to update format images when you edit the original image.
+	Added new filesystem.delete_format_images. Enables you to control if format images is to be deleted if the original is deleted.
+	Added new disabled_tools js option enables you to disable specific tools from page level or TinyMCE.
+	Added new tools js option enables you specify tools from page level or TinyMCE.
+	Fixed bug where the first page size wasn't correct. It displayed one item less that expected.
+	Fixed bug where it wasn't possible to override general.language using an external authenticator.
+	Fixed bug an JS exception was thown when changing page, due to a call to preventDefault.
+	Fixed bug where keepAlive handler was missing. It will not hit the backend each 5 minutes.
+	Fixed bug where Gecko browsers would produce an traling focus border for toolbar items.
+	Fixed bug where directory path would be on two lines if it was very long.
+	Fixed bug where loading the xml resource files would break on some PHP installations.
+	Fixed bug where add file action wasn't executed when multiple files where uploaded.
+	Fixed bug where upload.format wasn't applied when multiple files where uploaded.
+	Fixed bug where it wasn't possible to override path and rootpath settings from TinyMCE init.
+	Fixed bug where rootpath names didn't work when specified in javascript options.
+	Fixed bug where directory listing wasn't rooted if rootpath was specified using the javascript options.
+	Fixed bug where the upload dialog produced a vertical scrollbar on IE.
+	Fixed bug where images would be inserted to beginning of editor instances on IE.
+	Fixed bug where scrolling of thumbnails didn't work correctly in IE.
+	Fixed bug where singe file uploads wasn't working correctly.
+	Fixed bug where native windows wasn't move to top.
+	Fixed bug where upload with upper case extensions would fail.
+	Fixed bug where filter input was case sensitive.
+	Fixed bug where filter wouldn't move the user to the first page.
+	Replaced upload.replace_diacritics with filesystem.clean_names. To make it more general and also take care of whitespace.
+	Optimized file listing logic by 600%. The sorting was improved by sorting by the file names first and then creating file instances.
+Version 3.1b1 (2008-10-23)
+	Added new multiple file upload uses Flash, Google Gears and Silverlight. Chunks large files by default.
+	Added new API for client side plugin logic. You can now add menu items, dialogs and buttons from plugins.
+	Added new resources.xml file for all themes and plugins. These are used to compress and concat js and css files.
+	Added new support for live preview of resize, flip and rotate in image editor.
+	Added new support for file and directory filtering from page level.

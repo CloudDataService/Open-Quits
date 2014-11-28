@@ -1,0 +1,1 @@
+ALTER TABLE `clients` ADD `email` varchar(128) COLLATE 'latin1_swedish_ci' NULL AFTER `tel_alt`;
