@@ -2,7 +2,7 @@
 
 ---
 
-Write something about Open Quits here...
+Open Quits is a smoking cessation data management system. It has a two teir access for provider and organisation management of stop smoking services. It supports the gold standard monitoring form and can also help manage payments and reporting.
 
 Setup
 ---
@@ -45,4 +45,4 @@ See the LICENSE file
 
 Copyright
 ---
-Add some data here to ref against CDS.
+Copyright (c) 2014 Cloud Data Service Ltd. All rights reserved. See license file for more information 
